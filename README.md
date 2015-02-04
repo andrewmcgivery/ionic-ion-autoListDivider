@@ -39,3 +39,5 @@ $scope.dividerFunction = function(key){
 ```
 
 `key` will be the value passed into `auto-divider-value`.
+
+CodePen of examples: http://codepen.io/andrewmcgivery/pen/XJeQyW
