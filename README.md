@@ -15,8 +15,8 @@ Default behavior is to take the first letter of the `auto-list-divider-value` pa
 
 ```
 <ion-list>
-        <div auto-list-divider auto-list-divider-value="{{item.user.name.first}}" class="item item-avatar" ng-repeat="item in items">
-		</div>
+        <ion-item auto-list-divider auto-list-divider-value="{{item.user.name.first}}" class="item item-avatar" ng-repeat="item in items">
+	</ion-item>
 </ion-list>
 ```
 
@@ -25,8 +25,8 @@ A custom function to calculate the divider based on the passed in value can be s
 
 ```
 <ion-list>
-        <div auto-divider auto-divider-value="{{item.user.gender}}" auto-divider-function="dividerFunction" class="item item-avatar" ng-repeat="item in items">
-		</div>
+        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-divider-function="dividerFunction" class="item item-avatar" ng-repeat="item in items">
+	</ion-item>
 </ion-list>
 ```
 
