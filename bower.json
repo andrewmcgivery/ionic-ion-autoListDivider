@@ -1,0 +1,22 @@
+{
+  "name": "ionic-ion-autoListDivider",
+  "main": "ionic-ion-autoListDivider.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/karademada/ionic-ion-autoListDivider",
+  "authors": [
+    "Andrew McGivery"
+  ],
+  "description": "Gives a set of directives for automatically adding in list dividers for an ng-repeat. (Works for Alphabetical or by Categories)",
+  "keywords": [
+    "ionic",
+    "listdivider"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
