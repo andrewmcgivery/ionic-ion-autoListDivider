@@ -13,8 +13,6 @@ You'll need a list of objects (sorted) and an `ng-repeat`.
 
 **(3)** Add `'ionic.ion.autoListDivider'` to your main module's list of dependencies
 
-```
-
 An example sorting function in your controller:
 
 ```
