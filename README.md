@@ -43,11 +43,11 @@ Default behavior is to take the first letter of the `auto-list-divider-value` pa
 ```
 
 ## Example: Custom Divider Function
-A custom function to calculate the divider based on the passed in value can be specified using `auto-divider-function`. This should be the name of a fucction in your controllers scope.
+A custom function to calculate the divider based on the passed in value can be specified using `auto-list-divider-function`. This should be the name of a fucction in your controllers scope.
 
 ```
 <ion-list>
-        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
+        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-list-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
 	</ion-item>
 </ion-list>
 ```
