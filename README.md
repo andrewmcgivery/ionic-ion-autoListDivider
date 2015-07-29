@@ -47,7 +47,7 @@ A custom function to calculate the divider based on the passed in value can be s
 
 ```
 <ion-list>
-        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-list-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
+        <ion-item auto-list-divider auto-list-divider-value="{{item.user.gender}}" auto-list-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
 	</ion-item>
 </ion-list>
 ```
