@@ -21,10 +21,10 @@ items.sort(function(a,b){
 ```
 
 # Basic Usage
-Take any `ng-repeat` and add the `auto-list-divider` and the `auto-list-divider-value` attributes. The `auto-list-divider-value` attribute should have the property passed in that you are sorting on.
+Take any `ng-repeat` and add the `auto-list-divider`, `auto-list-divider-value`, and the `auto-list-divider-class` attributes. The `auto-list-divider-value` attribute should have the property passed in that you are sorting on. The `auto-list-divider-class` attribute should be a unique string. It will be appended into the class attribute of each generated header (used for removing headers when using `ion-refresher` in your app).
 
 ```
-<ion-item auto-list-divider auto-list-divider-value="{{item.user.name.first}}" ng-repeat="item in items">
+<ion-item auto-list-divider auto-list-divider-value="{{item.user.name.first}}" auto-list-divider-class="auto_items" ng-repeat="item in items">
 ```
 
 By default, it will divide these items alphabetically by the first letter of the value passed in.
@@ -34,7 +34,7 @@ Default behavior is to take the first letter of the `auto-list-divider-value` pa
 
 ```
 <ion-list>
-        <ion-item auto-list-divider auto-list-divider-value="{{item.user.name.first}}" class="item-avatar" ng-repeat="item in items">
+        <ion-item auto-list-divider auto-list-divider-value="{{item.user.name.first}}" auto-list-divider-class="names" class="item-avatar" ng-repeat="item in items">
 	</ion-item>
 </ion-list>
 ```
@@ -44,7 +44,7 @@ A custom function to calculate the divider based on the passed in value can be s
 
 ```
 <ion-list>
-        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
+        <ion-item auto-divider auto-divider-value="{{item.user.gender}}" auto-list-divider-class="gender" auto-divider-function="dividerFunction" class="item-avatar" ng-repeat="item in items">
 	</ion-item>
 </ion-list>
 ```
@@ -58,5 +58,3 @@ $scope.dividerFunction = function(key){
 ```
 
 `key` will be the value passed into `auto-divider-value`.
-
-CodePen of examples: http://codepen.io/andrewmcgivery/pen/XJeQyW
