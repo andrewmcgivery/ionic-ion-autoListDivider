@@ -1,8 +1,8 @@
 {
-  "name": "ionic-ion-autoListDivider",
-  "main": "ionic-ion-autoListDivider.js",
+  "name": "ionic-ion-auto-list-divider",
+  "main": "ionic-ion-auto-list-divider.js",
   "version": "0.0.1",
-  "homepage": "https://github.com/karademada/ionic-ion-autoListDivider",
+  "homepage": "https://github.com/andrewmcgivery/ionic-ion-autoListDivider",
   "authors": [
     "Andrew McGivery"
   ],
