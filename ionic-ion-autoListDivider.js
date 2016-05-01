@@ -1,6 +1,11 @@
-angular.module('ionic.ion.autoListDivider',[])
+angular
+	.module('ionic.ion.autoListDivider', [])
+	.directive('autoListDivider', autoListDivider);
+	
+////////
 
-.directive('autoListDivider', function($timeout) {  
+autoListDivider.$inject = ['$timeout'];
+function autoListDivider($timeout) {  
 	var lastDivideKey = "";
 
 	return {
@@ -26,4 +31,4 @@ angular.module('ionic.ion.autoListDivider',[])
 			$timeout(doDivide,0)
 		}
 	}
-});
+}
